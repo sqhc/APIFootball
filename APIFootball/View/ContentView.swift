@@ -18,6 +18,9 @@ struct ContentView: View {
                     NavigationLink("Timezones") {
                         TimezonesView(vm: TimezonesViewModel())
                     }
+                    NavigationLink("Search countries"){
+                        SearchCountriesView()
+                    }
                 }
                 .navigationTitle("Welcome")
                 .foregroundColor(.white)
