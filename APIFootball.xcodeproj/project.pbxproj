@@ -14,6 +14,9 @@
 		06D886922A3A26C400E7D1D6 /* APIFootballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886912A3A26C400E7D1D6 /* APIFootballTests.swift */; };
 		06D8869C2A3A26C400E7D1D6 /* APIFootballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D8869B2A3A26C400E7D1D6 /* APIFootballUITests.swift */; };
 		06D8869E2A3A26C400E7D1D6 /* APIFootballUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D8869D2A3A26C400E7D1D6 /* APIFootballUITestsLaunchTests.swift */; };
+		06D886AE2A3A336600E7D1D6 /* TimezonesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886AD2A3A336400E7D1D6 /* TimezonesDataModel.swift */; };
+		06D886B02A3A340900E7D1D6 /* TimezonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886AF2A3A340900E7D1D6 /* TimezonesView.swift */; };
+		06D886B22A3A342700E7D1D6 /* TimezonesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886B12A3A342700E7D1D6 /* TimezonesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		06D886972A3A26C400E7D1D6 /* APIFootballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIFootballUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D8869B2A3A26C400E7D1D6 /* APIFootballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFootballUITests.swift; sourceTree = "<group>"; };
 		06D8869D2A3A26C400E7D1D6 /* APIFootballUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFootballUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06D886AD2A3A336400E7D1D6 /* TimezonesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonesDataModel.swift; sourceTree = "<group>"; };
+		06D886AF2A3A340900E7D1D6 /* TimezonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonesView.swift; sourceTree = "<group>"; };
+		06D886B12A3A342700E7D1D6 /* TimezonesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,10 @@
 		06D8867F2A3A26A500E7D1D6 /* APIFootball */ = {
 			isa = PBXGroup;
 			children = (
+				06D886AC2A3A280A00E7D1D6 /* Model */,
+				06D886AB2A3A27A700E7D1D6 /* View */,
+				06D886AA2A3A279D00E7D1D6 /* View Model */,
 				06D886802A3A26A500E7D1D6 /* APIFootballApp.swift */,
-				06D886822A3A26A500E7D1D6 /* ContentView.swift */,
 				06D886842A3A26C300E7D1D6 /* Assets.xcassets */,
 				06D886862A3A26C300E7D1D6 /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				06D8869D2A3A26C400E7D1D6 /* APIFootballUITestsLaunchTests.swift */,
 			);
 			path = APIFootballUITests;
+			sourceTree = "<group>";
+		};
+		06D886AA2A3A279D00E7D1D6 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				06D886B12A3A342700E7D1D6 /* TimezonesViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		06D886AB2A3A27A700E7D1D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06D886822A3A26A500E7D1D6 /* ContentView.swift */,
+				06D886AF2A3A340900E7D1D6 /* TimezonesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06D886AC2A3A280A00E7D1D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06D886AD2A3A336400E7D1D6 /* TimezonesDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D886AE2A3A336600E7D1D6 /* TimezonesDataModel.swift in Sources */,
 				06D886832A3A26A500E7D1D6 /* ContentView.swift in Sources */,
+				06D886B22A3A342700E7D1D6 /* TimezonesViewModel.swift in Sources */,
 				06D886812A3A26A500E7D1D6 /* APIFootballApp.swift in Sources */,
+				06D886B02A3A340900E7D1D6 /* TimezonesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
