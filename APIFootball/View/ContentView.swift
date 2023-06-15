@@ -21,6 +21,9 @@ struct ContentView: View {
                     NavigationLink("Search countries"){
                         SearchCountriesView()
                     }
+                    NavigationLink("Seasons") {
+                        SeasonsView(vm: SeasonsViewModel())
+                    }
                 }
                 .navigationTitle("Welcome")
                 .foregroundColor(.white)

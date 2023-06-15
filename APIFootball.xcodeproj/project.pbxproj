@@ -21,6 +21,9 @@
 		06D886B62A3A426F00E7D1D6 /* CountriesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886B52A3A426F00E7D1D6 /* CountriesDataModel.swift */; };
 		06D886B82A3A433D00E7D1D6 /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886B72A3A433D00E7D1D6 /* CountriesView.swift */; };
 		06D886BA2A3A439A00E7D1D6 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886B92A3A439A00E7D1D6 /* CountriesViewModel.swift */; };
+		06D886BC2A3B662900E7D1D6 /* SeasonsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886BB2A3B662900E7D1D6 /* SeasonsDataModel.swift */; };
+		06D886BE2A3B675B00E7D1D6 /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886BD2A3B675B00E7D1D6 /* SeasonsView.swift */; };
+		06D886C02A3B677300E7D1D6 /* SeasonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886BF2A3B677300E7D1D6 /* SeasonsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		06D886B52A3A426F00E7D1D6 /* CountriesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataModel.swift; sourceTree = "<group>"; };
 		06D886B72A3A433D00E7D1D6 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
 		06D886B92A3A439A00E7D1D6 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		06D886BB2A3B662900E7D1D6 /* SeasonsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsDataModel.swift; sourceTree = "<group>"; };
+		06D886BD2A3B675B00E7D1D6 /* SeasonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsView.swift; sourceTree = "<group>"; };
+		06D886BF2A3B677300E7D1D6 /* SeasonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 			children = (
 				06D886B12A3A342700E7D1D6 /* TimezonesViewModel.swift */,
 				06D886B92A3A439A00E7D1D6 /* CountriesViewModel.swift */,
+				06D886BF2A3B677300E7D1D6 /* SeasonsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 				06D886AF2A3A340900E7D1D6 /* TimezonesView.swift */,
 				06D886B32A3A405C00E7D1D6 /* SearchCountriesView.swift */,
 				06D886B72A3A433D00E7D1D6 /* CountriesView.swift */,
+				06D886BD2A3B675B00E7D1D6 /* SeasonsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			children = (
 				06D886AD2A3A336400E7D1D6 /* TimezonesDataModel.swift */,
 				06D886B52A3A426F00E7D1D6 /* CountriesDataModel.swift */,
+				06D886BB2A3B662900E7D1D6 /* SeasonsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,11 +313,14 @@
 			files = (
 				06D886AE2A3A336600E7D1D6 /* TimezonesDataModel.swift in Sources */,
 				06D886832A3A26A500E7D1D6 /* ContentView.swift in Sources */,
+				06D886BC2A3B662900E7D1D6 /* SeasonsDataModel.swift in Sources */,
 				06D886B62A3A426F00E7D1D6 /* CountriesDataModel.swift in Sources */,
 				06D886BA2A3A439A00E7D1D6 /* CountriesViewModel.swift in Sources */,
 				06D886B22A3A342700E7D1D6 /* TimezonesViewModel.swift in Sources */,
 				06D886812A3A26A500E7D1D6 /* APIFootballApp.swift in Sources */,
 				06D886B82A3A433D00E7D1D6 /* CountriesView.swift in Sources */,
+				06D886BE2A3B675B00E7D1D6 /* SeasonsView.swift in Sources */,
+				06D886C02A3B677300E7D1D6 /* SeasonsViewModel.swift in Sources */,
 				06D886B02A3A340900E7D1D6 /* TimezonesView.swift in Sources */,
 				06D886B42A3A405C00E7D1D6 /* SearchCountriesView.swift in Sources */,
 			);
