@@ -9,11 +9,16 @@ import SwiftUI
 
 struct SeasonsView: View {
     @StateObject var vm: SeasonsViewModel
+    @State var showed = false
+    
     var body: some View {
         ZStack{
             if let seasons = vm.seasons?.response{
                 List(seasons, id:\.self){ season in
                     Text("\(season)")
+                    NavigationLink("Leagues in this season") {
+                        LeaguesBySeasonView(vm: LeaguesBySeasonViewModel(season: "\(season)"))
+                    }
                 }
                 .listStyle(.plain)
                 .navigationTitle("Seasons")
@@ -23,6 +28,8 @@ struct SeasonsView: View {
             }
         }
         .onAppear {
+            guard !showed else { return }
+            showed.toggle()
             vm.fetchSeasons()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {
