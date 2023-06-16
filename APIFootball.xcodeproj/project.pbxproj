@@ -27,6 +27,10 @@
 		06D886C22A3B7EE700E7D1D6 /* LeaguesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886C12A3B7EE700E7D1D6 /* LeaguesDataModel.swift */; };
 		06D886C42A3B854A00E7D1D6 /* LeaguesBySeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886C32A3B854A00E7D1D6 /* LeaguesBySeasonView.swift */; };
 		06D886C62A3B856200E7D1D6 /* LeaguesBySeasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886C52A3B856200E7D1D6 /* LeaguesBySeasonViewModel.swift */; };
+		06D886C82A3CCA5100E7D1D6 /* FixturesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886C72A3CCA5100E7D1D6 /* FixturesDataModel.swift */; };
+		06D886CC2A3CD7D700E7D1D6 /* LeagueSearchOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886CB2A3CD7D700E7D1D6 /* LeagueSearchOption.swift */; };
+		06D886CE2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886CD2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift */; };
+		06D886D02A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886CF2A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		06D886C12A3B7EE700E7D1D6 /* LeaguesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesDataModel.swift; sourceTree = "<group>"; };
 		06D886C32A3B854A00E7D1D6 /* LeaguesBySeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesBySeasonView.swift; sourceTree = "<group>"; };
 		06D886C52A3B856200E7D1D6 /* LeaguesBySeasonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesBySeasonViewModel.swift; sourceTree = "<group>"; };
+		06D886C72A3CCA5100E7D1D6 /* FixturesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesDataModel.swift; sourceTree = "<group>"; };
+		06D886CB2A3CD7D700E7D1D6 /* LeagueSearchOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSearchOption.swift; sourceTree = "<group>"; };
+		06D886CD2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesOfLeagueView.swift; sourceTree = "<group>"; };
+		06D886CF2A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesOfLeagueViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,7 @@
 				06D886B92A3A439A00E7D1D6 /* CountriesViewModel.swift */,
 				06D886BF2A3B677300E7D1D6 /* SeasonsViewModel.swift */,
 				06D886C52A3B856200E7D1D6 /* LeaguesBySeasonViewModel.swift */,
+				06D886CF2A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -175,6 +184,8 @@
 				06D886B72A3A433D00E7D1D6 /* CountriesView.swift */,
 				06D886BD2A3B675B00E7D1D6 /* SeasonsView.swift */,
 				06D886C32A3B854A00E7D1D6 /* LeaguesBySeasonView.swift */,
+				06D886CB2A3CD7D700E7D1D6 /* LeagueSearchOption.swift */,
+				06D886CD2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +197,7 @@
 				06D886B52A3A426F00E7D1D6 /* CountriesDataModel.swift */,
 				06D886BB2A3B662900E7D1D6 /* SeasonsDataModel.swift */,
 				06D886C12A3B7EE700E7D1D6 /* LeaguesDataModel.swift */,
+				06D886C72A3CCA5100E7D1D6 /* FixturesDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,13 +332,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D886CE2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift in Sources */,
 				06D886AE2A3A336600E7D1D6 /* TimezonesDataModel.swift in Sources */,
 				06D886832A3A26A500E7D1D6 /* ContentView.swift in Sources */,
 				06D886BC2A3B662900E7D1D6 /* SeasonsDataModel.swift in Sources */,
 				06D886B62A3A426F00E7D1D6 /* CountriesDataModel.swift in Sources */,
 				06D886BA2A3A439A00E7D1D6 /* CountriesViewModel.swift in Sources */,
 				06D886B22A3A342700E7D1D6 /* TimezonesViewModel.swift in Sources */,
+				06D886CC2A3CD7D700E7D1D6 /* LeagueSearchOption.swift in Sources */,
 				06D886812A3A26A500E7D1D6 /* APIFootballApp.swift in Sources */,
+				06D886C82A3CCA5100E7D1D6 /* FixturesDataModel.swift in Sources */,
 				06D886B82A3A433D00E7D1D6 /* CountriesView.swift in Sources */,
 				06D886BE2A3B675B00E7D1D6 /* SeasonsView.swift in Sources */,
 				06D886C22A3B7EE700E7D1D6 /* LeaguesDataModel.swift in Sources */,
@@ -334,6 +349,7 @@
 				06D886C42A3B854A00E7D1D6 /* LeaguesBySeasonView.swift in Sources */,
 				06D886C62A3B856200E7D1D6 /* LeaguesBySeasonViewModel.swift in Sources */,
 				06D886B02A3A340900E7D1D6 /* TimezonesView.swift in Sources */,
+				06D886D02A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift in Sources */,
 				06D886B42A3A405C00E7D1D6 /* SearchCountriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

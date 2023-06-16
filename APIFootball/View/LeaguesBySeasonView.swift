@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LeaguesBySeasonView: View {
     @StateObject var vm: LeaguesBySeasonViewModel
+    @State var showed = false
     
     var body: some View {
         ZStack{
@@ -23,12 +24,15 @@ struct LeaguesBySeasonView: View {
             }
         }
         .onAppear {
+            guard !showed else { return }
+            showed.toggle()
             vm.fetchLeaguesBySeason()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {
             Button("Cancel") {
             }
         }
+        .environmentObject(vm)
     }
 }
 
@@ -39,6 +43,7 @@ struct LeaguesBySeasonView_Previews: PreviewProvider {
 }
 
 struct LeagueItemBySeason: View{
+    @EnvironmentObject var vm: LeaguesBySeasonViewModel
     var league: League
     var body: some View{
         VStack(alignment: .leading){
@@ -47,6 +52,9 @@ struct LeagueItemBySeason: View{
             AsyncImage(url: URL(string: league.league?.logo ?? ""))
             Text("Country name: \(league.country?.name ?? "")")
             AsyncImage(url: URL(string: league.country?.flag ?? ""))
+            NavigationLink("Search options") {
+                LeagueSearchOption(leageID: "\(league.league?.id ?? 0)", season: vm.season)
+            }
             if let seasons = league.seasons{
                 Section {
                     List(seasons, id:\.year){ season in
