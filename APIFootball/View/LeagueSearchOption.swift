@@ -27,6 +27,14 @@ struct LeagueSearchOption: View {
                             .foregroundColor(.white)
                     }
 
+                    NavigationLink {
+                        PlayersOfLeagueView(vm: PlayersOfLeagueViewModel(league: leageID, season: season))
+                    } label: {
+                        Text("Players")
+                            .background(Color.red.cornerRadius(20))
+                            .foregroundColor(.white)
+                    }
+
                 }
                 Spacer()
             }

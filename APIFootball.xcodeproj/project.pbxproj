@@ -31,6 +31,9 @@
 		06D886CC2A3CD7D700E7D1D6 /* LeagueSearchOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886CB2A3CD7D700E7D1D6 /* LeagueSearchOption.swift */; };
 		06D886CE2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886CD2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift */; };
 		06D886D02A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886CF2A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift */; };
+		06D886D22A3F390700E7D1D6 /* PlayersDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886D12A3F390600E7D1D6 /* PlayersDataModel.swift */; };
+		06D886D42A3F493D00E7D1D6 /* PlayersOfLeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886D32A3F493C00E7D1D6 /* PlayersOfLeagueView.swift */; };
+		06D886D62A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886D52A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		06D886CB2A3CD7D700E7D1D6 /* LeagueSearchOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSearchOption.swift; sourceTree = "<group>"; };
 		06D886CD2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesOfLeagueView.swift; sourceTree = "<group>"; };
 		06D886CF2A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesOfLeagueViewModel.swift; sourceTree = "<group>"; };
+		06D886D12A3F390600E7D1D6 /* PlayersDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersDataModel.swift; sourceTree = "<group>"; };
+		06D886D32A3F493C00E7D1D6 /* PlayersOfLeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersOfLeagueView.swift; sourceTree = "<group>"; };
+		06D886D52A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersOfLeagueViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 				06D886BF2A3B677300E7D1D6 /* SeasonsViewModel.swift */,
 				06D886C52A3B856200E7D1D6 /* LeaguesBySeasonViewModel.swift */,
 				06D886CF2A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift */,
+				06D886D52A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -186,6 +193,7 @@
 				06D886C32A3B854A00E7D1D6 /* LeaguesBySeasonView.swift */,
 				06D886CB2A3CD7D700E7D1D6 /* LeagueSearchOption.swift */,
 				06D886CD2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift */,
+				06D886D32A3F493C00E7D1D6 /* PlayersOfLeagueView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 				06D886BB2A3B662900E7D1D6 /* SeasonsDataModel.swift */,
 				06D886C12A3B7EE700E7D1D6 /* LeaguesDataModel.swift */,
 				06D886C72A3CCA5100E7D1D6 /* FixturesDataModel.swift */,
+				06D886D12A3F390600E7D1D6 /* PlayersDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,9 +350,12 @@
 				06D886B22A3A342700E7D1D6 /* TimezonesViewModel.swift in Sources */,
 				06D886CC2A3CD7D700E7D1D6 /* LeagueSearchOption.swift in Sources */,
 				06D886812A3A26A500E7D1D6 /* APIFootballApp.swift in Sources */,
+				06D886D62A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift in Sources */,
 				06D886C82A3CCA5100E7D1D6 /* FixturesDataModel.swift in Sources */,
 				06D886B82A3A433D00E7D1D6 /* CountriesView.swift in Sources */,
 				06D886BE2A3B675B00E7D1D6 /* SeasonsView.swift in Sources */,
+				06D886D42A3F493D00E7D1D6 /* PlayersOfLeagueView.swift in Sources */,
+				06D886D22A3F390700E7D1D6 /* PlayersDataModel.swift in Sources */,
 				06D886C22A3B7EE700E7D1D6 /* LeaguesDataModel.swift in Sources */,
 				06D886C02A3B677300E7D1D6 /* SeasonsViewModel.swift in Sources */,
 				06D886C42A3B854A00E7D1D6 /* LeaguesBySeasonView.swift in Sources */,
