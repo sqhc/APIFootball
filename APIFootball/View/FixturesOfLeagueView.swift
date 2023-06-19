@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FixturesOfLeagueView: View {
     @StateObject var vm: FixturesOfLeagueViewModel
+    @State var showed = false
     
     var body: some View {
         ZStack{
@@ -24,6 +25,8 @@ struct FixturesOfLeagueView: View {
             }
         }
         .onAppear {
+            guard !showed else { return }
+            showed.toggle()
             vm.fetchFixturesByLeague()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {
@@ -66,6 +69,10 @@ struct FixtureContent: View{
             }
             
             Text("Home goals: \(fixture.goals?.home ?? 0) Away goals: \(fixture.goals?.away ?? 0)")
+            
+            NavigationLink("Fixture predictions") {
+                FixturePredictionsView(vm: FixturePredictionsViewModel(fixture: "\(fixture.fixture?.id ?? 0)"))
+            }
         }
     }
 }

@@ -34,6 +34,9 @@
 		06D886D22A3F390700E7D1D6 /* PlayersDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886D12A3F390600E7D1D6 /* PlayersDataModel.swift */; };
 		06D886D42A3F493D00E7D1D6 /* PlayersOfLeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886D32A3F493C00E7D1D6 /* PlayersOfLeagueView.swift */; };
 		06D886D62A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886D52A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift */; };
+		06D886DC2A40AE9600E7D1D6 /* PredictionsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886DB2A40AE9500E7D1D6 /* PredictionsDataModel.swift */; };
+		06D886DE2A40BB4300E7D1D6 /* FixturePredictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886DD2A40BB4300E7D1D6 /* FixturePredictionsView.swift */; };
+		06D886E02A40BB6600E7D1D6 /* FixturePredictionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886DF2A40BB6600E7D1D6 /* FixturePredictionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		06D886D12A3F390600E7D1D6 /* PlayersDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersDataModel.swift; sourceTree = "<group>"; };
 		06D886D32A3F493C00E7D1D6 /* PlayersOfLeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersOfLeagueView.swift; sourceTree = "<group>"; };
 		06D886D52A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersOfLeagueViewModel.swift; sourceTree = "<group>"; };
+		06D886DB2A40AE9500E7D1D6 /* PredictionsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsDataModel.swift; sourceTree = "<group>"; };
+		06D886DD2A40BB4300E7D1D6 /* FixturePredictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturePredictionsView.swift; sourceTree = "<group>"; };
+		06D886DF2A40BB6600E7D1D6 /* FixturePredictionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturePredictionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 				06D886C52A3B856200E7D1D6 /* LeaguesBySeasonViewModel.swift */,
 				06D886CF2A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift */,
 				06D886D52A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift */,
+				06D886DF2A40BB6600E7D1D6 /* FixturePredictionsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 				06D886CB2A3CD7D700E7D1D6 /* LeagueSearchOption.swift */,
 				06D886CD2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift */,
 				06D886D32A3F493C00E7D1D6 /* PlayersOfLeagueView.swift */,
+				06D886DD2A40BB4300E7D1D6 /* FixturePredictionsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 				06D886C12A3B7EE700E7D1D6 /* LeaguesDataModel.swift */,
 				06D886C72A3CCA5100E7D1D6 /* FixturesDataModel.swift */,
 				06D886D12A3F390600E7D1D6 /* PlayersDataModel.swift */,
+				06D886DB2A40AE9500E7D1D6 /* PredictionsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,7 +355,9 @@
 				06D886832A3A26A500E7D1D6 /* ContentView.swift in Sources */,
 				06D886BC2A3B662900E7D1D6 /* SeasonsDataModel.swift in Sources */,
 				06D886B62A3A426F00E7D1D6 /* CountriesDataModel.swift in Sources */,
+				06D886DE2A40BB4300E7D1D6 /* FixturePredictionsView.swift in Sources */,
 				06D886BA2A3A439A00E7D1D6 /* CountriesViewModel.swift in Sources */,
+				06D886E02A40BB6600E7D1D6 /* FixturePredictionsViewModel.swift in Sources */,
 				06D886B22A3A342700E7D1D6 /* TimezonesViewModel.swift in Sources */,
 				06D886CC2A3CD7D700E7D1D6 /* LeagueSearchOption.swift in Sources */,
 				06D886812A3A26A500E7D1D6 /* APIFootballApp.swift in Sources */,
@@ -363,6 +374,7 @@
 				06D886B02A3A340900E7D1D6 /* TimezonesView.swift in Sources */,
 				06D886D02A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift in Sources */,
 				06D886B42A3A405C00E7D1D6 /* SearchCountriesView.swift in Sources */,
+				06D886DC2A40AE9600E7D1D6 /* PredictionsDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
