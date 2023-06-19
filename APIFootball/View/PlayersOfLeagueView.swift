@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlayersOfLeagueView: View {
     @StateObject var vm: PlayersOfLeagueViewModel
-    
+    @State var showed = false
     var body: some View {
         ZStack{
             if let players = vm.players?.response{
@@ -23,12 +23,15 @@ struct PlayersOfLeagueView: View {
             }
         }
         .onAppear {
+            guard !showed else { return }
+            showed.toggle()
             vm.fetchPlayers()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {
             Button("Cancel") {
             }
         }
+        .environmentObject(vm)
     }
 }
 
@@ -39,6 +42,7 @@ struct PlayersOfLeagueView_Previews: PreviewProvider {
 }
 
 struct LeaguePlayerItem: View{
+    @EnvironmentObject var vm: PlayersOfLeagueViewModel
     var player: Player
     var body: some View{
         VStack{
@@ -47,6 +51,9 @@ struct LeaguePlayerItem: View{
             Text("\(player.player?.firstname ?? ""). \(player.player?.lastname ?? "")")
             Text("Birth date: \(player.player?.birth?.date ?? "") Birth place: \(player.player?.birth?.place ?? "") Birth country \(player.player?.birth?.country ?? "")")
             Text("Nationality: \(player.player?.nationality ?? "") Height: \(player.player?.height ?? "") Weight: \(player.player?.weight ?? "")")
+            NavigationLink("Player statistics") {
+                PlayerStatisticsByPlayerIDView(vm: PlayerStatisticsByPlayerIDViewModel(id: "\(player.player?.id ?? 0)", name: player.player?.name ?? "", season: vm.season))
+            }
         }
     }
 }
