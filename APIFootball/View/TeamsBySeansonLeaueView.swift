@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TeamsBySeansonLeaueView: View {
     @StateObject var vm: TeamsBySeansonLeaueViewModel
+    @State var showed = false
     
     var body: some View {
         ZStack{
@@ -23,6 +24,8 @@ struct TeamsBySeansonLeaueView: View {
             }
         }
         .onAppear {
+            guard !showed else{ return }
+            showed.toggle()
             vm.fetchTeams()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {
@@ -64,6 +67,9 @@ struct LeagueTeamInfoConten: View{
             Text("Founded in \(teamInfo.founded ?? 0)")
             if let national = teamInfo.national{
                 Text(national ? "Is national team" : "Not national team")
+            }
+            NavigationLink("Coaches in the team") {
+                CoachesByTeamView(vm: CoachesByTeamViewModel(teamName: teamInfo.name ?? "", teamID: "\(teamInfo.id ?? 0)"))
             }
         }
     }

@@ -10,6 +10,9 @@
 		06810A2C2A41F1B900A8DF24 /* TeamsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A2B2A41F1B900A8DF24 /* TeamsDataModel.swift */; };
 		06810A2E2A41F6A000A8DF24 /* TeamsBySeansonLeaueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A2D2A41F6A000A8DF24 /* TeamsBySeansonLeaueView.swift */; };
 		06810A302A41F6B200A8DF24 /* TeamsBySeansonLeaueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A2F2A41F6B200A8DF24 /* TeamsBySeansonLeaueViewModel.swift */; };
+		06810A322A421B7700A8DF24 /* CoachesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A312A421B7700A8DF24 /* CoachesDataModel.swift */; };
+		06810A342A42241200A8DF24 /* CoachesByTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A332A42241200A8DF24 /* CoachesByTeamView.swift */; };
+		06810A362A42244100A8DF24 /* CoachesByTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A352A42244100A8DF24 /* CoachesByTeamViewModel.swift */; };
 		06D886812A3A26A500E7D1D6 /* APIFootballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886802A3A26A500E7D1D6 /* APIFootballApp.swift */; };
 		06D886832A3A26A500E7D1D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886822A3A26A500E7D1D6 /* ContentView.swift */; };
 		06D886852A3A26C300E7D1D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D886842A3A26C300E7D1D6 /* Assets.xcassets */; };
@@ -66,6 +69,9 @@
 		06810A2B2A41F1B900A8DF24 /* TeamsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsDataModel.swift; sourceTree = "<group>"; };
 		06810A2D2A41F6A000A8DF24 /* TeamsBySeansonLeaueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsBySeansonLeaueView.swift; sourceTree = "<group>"; };
 		06810A2F2A41F6B200A8DF24 /* TeamsBySeansonLeaueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsBySeansonLeaueViewModel.swift; sourceTree = "<group>"; };
+		06810A312A421B7700A8DF24 /* CoachesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachesDataModel.swift; sourceTree = "<group>"; };
+		06810A332A42241200A8DF24 /* CoachesByTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachesByTeamView.swift; sourceTree = "<group>"; };
+		06810A352A42244100A8DF24 /* CoachesByTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachesByTeamViewModel.swift; sourceTree = "<group>"; };
 		06D8867D2A3A26A500E7D1D6 /* APIFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D886802A3A26A500E7D1D6 /* APIFootballApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFootballApp.swift; sourceTree = "<group>"; };
 		06D886822A3A26A500E7D1D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 				06D886DF2A40BB6600E7D1D6 /* FixturePredictionsViewModel.swift */,
 				06D886E52A40D7B800E7D1D6 /* PlayerStatisticsByPlayerIDViewModel.swift */,
 				06810A2F2A41F6B200A8DF24 /* TeamsBySeansonLeaueViewModel.swift */,
+				06810A352A42244100A8DF24 /* CoachesByTeamViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 				06D886DD2A40BB4300E7D1D6 /* FixturePredictionsView.swift */,
 				06D886E32A40D7A300E7D1D6 /* PlayerStatisticsByPlayerIDView.swift */,
 				06810A2D2A41F6A000A8DF24 /* TeamsBySeansonLeaueView.swift */,
+				06810A332A42241200A8DF24 /* CoachesByTeamView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				06D886DB2A40AE9500E7D1D6 /* PredictionsDataModel.swift */,
 				06D886E12A40D1C600E7D1D6 /* PlayerStatisticsDataModel.swift */,
 				06810A2B2A41F1B900A8DF24 /* TeamsDataModel.swift */,
+				06810A312A421B7700A8DF24 /* CoachesDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,13 +393,16 @@
 				06D886D62A3F49D600E7D1D6 /* PlayersOfLeagueViewModel.swift in Sources */,
 				06D886C82A3CCA5100E7D1D6 /* FixturesDataModel.swift in Sources */,
 				06810A2E2A41F6A000A8DF24 /* TeamsBySeansonLeaueView.swift in Sources */,
+				06810A342A42241200A8DF24 /* CoachesByTeamView.swift in Sources */,
 				06D886B82A3A433D00E7D1D6 /* CountriesView.swift in Sources */,
 				06D886BE2A3B675B00E7D1D6 /* SeasonsView.swift in Sources */,
+				06810A322A421B7700A8DF24 /* CoachesDataModel.swift in Sources */,
 				06810A302A41F6B200A8DF24 /* TeamsBySeansonLeaueViewModel.swift in Sources */,
 				06D886E22A40D1C600E7D1D6 /* PlayerStatisticsDataModel.swift in Sources */,
 				06810A2C2A41F1B900A8DF24 /* TeamsDataModel.swift in Sources */,
 				06D886D42A3F493D00E7D1D6 /* PlayersOfLeagueView.swift in Sources */,
 				06D886D22A3F390700E7D1D6 /* PlayersDataModel.swift in Sources */,
+				06810A362A42244100A8DF24 /* CoachesByTeamViewModel.swift in Sources */,
 				06D886C22A3B7EE700E7D1D6 /* LeaguesDataModel.swift in Sources */,
 				06D886C02A3B677300E7D1D6 /* SeasonsViewModel.swift in Sources */,
 				06D886C42A3B854A00E7D1D6 /* LeaguesBySeasonView.swift in Sources */,
