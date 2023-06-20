@@ -35,6 +35,14 @@ struct LeagueSearchOption: View {
                             .foregroundColor(.white)
                     }
 
+                    NavigationLink {
+                        TeamsBySeansonLeaueView(vm: TeamsBySeansonLeaueViewModel(league: leageID, season: season))
+                    } label: {
+                        Text("Teams")
+                            .background(Color.yellow.cornerRadius(20))
+                            .foregroundColor(.white)
+                    }
+
                 }
                 Spacer()
             }
