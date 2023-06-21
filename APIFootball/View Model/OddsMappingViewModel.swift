@@ -11,19 +11,20 @@ import Combine
 class OddsMappingViewModel: ObservableObject{
     var page = 1
     
-    var searchOddsMappingString = "https://api-football-v1.p.rapidapi.com/v3/odds/mapping?page=1"
     let headers = [
         "X-RapidAPI-Key": "54217155a0mshc59ae06a0968327p12a4c1jsn682bd9007ac0",
         "X-RapidAPI-Host": "api-football-v1.p.rapidapi.com"
     ]
     
-    @Published var odds: OddMappings?
+    @Published var odds: [OddMapping] = []
     @Published var hasError = false
     @Published var error: LoadError?
     
     private var bag: Set<AnyCancellable> = []
     
     func fetchOdds(){
+        let searchOddsMappingString = "https://api-football-v1.p.rapidapi.com/v3/odds/mapping?page=\(page)"
+        
         guard let url = URL(string: searchOddsMappingString) else{
             hasError = true
             error = .failedToUnwrapOptional
@@ -55,9 +56,17 @@ class OddsMappingViewModel: ObservableObject{
                     self?.error = .custom(error: error)
                 }
             } receiveValue: { [weak self] odds in
-                self?.odds = odds
+                self?.odds.append(contentsOf: odds.response ?? [])
             }
             .store(in: &bag)
+    }
+    
+    func pagination(odd: OddMapping){
+        let index = odds.firstIndex(of: odd)
+        if index == odds.count - 1{
+            page += 1
+            fetchOdds()
+        }
     }
 }
 

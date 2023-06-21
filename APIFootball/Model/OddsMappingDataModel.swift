@@ -11,7 +11,11 @@ struct OddMappings: Codable{
     let response: [OddMapping]?
 }
 
-struct OddMapping: Codable{
+struct OddMapping: Codable, Equatable{
+    static func == (lhs: OddMapping, rhs: OddMapping) -> Bool {
+        return lhs.fixture?.id == rhs.fixture?.id
+    }
+    
     let fixture: OddFixture?
     let update: String?
 }

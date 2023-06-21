@@ -12,19 +12,18 @@ struct OddsMappingView: View {
     
     var body: some View {
         ZStack{
-            if let odds = vm.odds?.response{
-                List(odds, id:\.fixture?.id){ odd in
-                    VStack{
-                        Text("Fixture id: \(odd.fixture?.id ?? 0)")
-                        Text("Fixture date: \(odd.fixture?.date ?? "")")
-                        Text("Updated at: \(odd.update ?? "")")
-                    }
+            List(vm.odds, id:\.fixture?.id){ odd in
+                VStack{
+                    Text("Fixture id: \(odd.fixture?.id ?? 0)")
+                    Text("Fixture date: \(odd.fixture?.date ?? "")")
+                    Text("Updated at: \(odd.update ?? "")")
                 }
-                .listStyle(.plain)
-                .navigationTitle("Odds")
-            } else{
-                ProgressView()
+                .onAppear {
+                    vm.pagination(odd: odd)
+                }
             }
+            .listStyle(.plain)
+            .navigationTitle("Odds")
         }
         .onAppear {
             vm.fetchOdds()
