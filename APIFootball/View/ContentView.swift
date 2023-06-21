@@ -24,6 +24,9 @@ struct ContentView: View {
                     NavigationLink("Seasons") {
                         SeasonsView(vm: SeasonsViewModel())
                     }
+                    NavigationLink("Odds") {
+                        OddsMappingView(vm: OddsMappingViewModel())
+                    }
                 }
                 .navigationTitle("Welcome")
                 .foregroundColor(.white)

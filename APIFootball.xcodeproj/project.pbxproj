@@ -16,6 +16,9 @@
 		06810A382A434CA100A8DF24 /* TrophiesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A372A434CA100A8DF24 /* TrophiesDataModel.swift */; };
 		06810A3A2A434D3F00A8DF24 /* TrophiesByCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A392A434D3F00A8DF24 /* TrophiesByCoachView.swift */; };
 		06810A3C2A434D5D00A8DF24 /* TrophiesByCoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A3B2A434D5D00A8DF24 /* TrophiesByCoachViewModel.swift */; };
+		06810A3E2A43649D00A8DF24 /* OddsMappingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A3D2A43649D00A8DF24 /* OddsMappingDataModel.swift */; };
+		06810A402A43659600A8DF24 /* OddsMappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A3F2A43659600A8DF24 /* OddsMappingView.swift */; };
+		06810A422A4365AC00A8DF24 /* OddsMappingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A412A4365AC00A8DF24 /* OddsMappingViewModel.swift */; };
 		06D886812A3A26A500E7D1D6 /* APIFootballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886802A3A26A500E7D1D6 /* APIFootballApp.swift */; };
 		06D886832A3A26A500E7D1D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886822A3A26A500E7D1D6 /* ContentView.swift */; };
 		06D886852A3A26C300E7D1D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D886842A3A26C300E7D1D6 /* Assets.xcassets */; };
@@ -78,6 +81,9 @@
 		06810A372A434CA100A8DF24 /* TrophiesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophiesDataModel.swift; sourceTree = "<group>"; };
 		06810A392A434D3F00A8DF24 /* TrophiesByCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophiesByCoachView.swift; sourceTree = "<group>"; };
 		06810A3B2A434D5D00A8DF24 /* TrophiesByCoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophiesByCoachViewModel.swift; sourceTree = "<group>"; };
+		06810A3D2A43649D00A8DF24 /* OddsMappingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsMappingDataModel.swift; sourceTree = "<group>"; };
+		06810A3F2A43659600A8DF24 /* OddsMappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsMappingView.swift; sourceTree = "<group>"; };
+		06810A412A4365AC00A8DF24 /* OddsMappingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsMappingViewModel.swift; sourceTree = "<group>"; };
 		06D8867D2A3A26A500E7D1D6 /* APIFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D886802A3A26A500E7D1D6 /* APIFootballApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFootballApp.swift; sourceTree = "<group>"; };
 		06D886822A3A26A500E7D1D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -213,6 +219,7 @@
 				06810A2F2A41F6B200A8DF24 /* TeamsBySeansonLeaueViewModel.swift */,
 				06810A352A42244100A8DF24 /* CoachesByTeamViewModel.swift */,
 				06810A3B2A434D5D00A8DF24 /* TrophiesByCoachViewModel.swift */,
+				06810A412A4365AC00A8DF24 /* OddsMappingViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -234,6 +241,7 @@
 				06810A2D2A41F6A000A8DF24 /* TeamsBySeansonLeaueView.swift */,
 				06810A332A42241200A8DF24 /* CoachesByTeamView.swift */,
 				06810A392A434D3F00A8DF24 /* TrophiesByCoachView.swift */,
+				06810A3F2A43659600A8DF24 /* OddsMappingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 				06810A2B2A41F1B900A8DF24 /* TeamsDataModel.swift */,
 				06810A312A421B7700A8DF24 /* CoachesDataModel.swift */,
 				06810A372A434CA100A8DF24 /* TrophiesDataModel.swift */,
+				06810A3D2A43649D00A8DF24 /* OddsMappingDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -408,6 +417,7 @@
 				06810A382A434CA100A8DF24 /* TrophiesDataModel.swift in Sources */,
 				06810A322A421B7700A8DF24 /* CoachesDataModel.swift in Sources */,
 				06810A302A41F6B200A8DF24 /* TeamsBySeansonLeaueViewModel.swift in Sources */,
+				06810A3E2A43649D00A8DF24 /* OddsMappingDataModel.swift in Sources */,
 				06D886E22A40D1C600E7D1D6 /* PlayerStatisticsDataModel.swift in Sources */,
 				06810A2C2A41F1B900A8DF24 /* TeamsDataModel.swift in Sources */,
 				06D886D42A3F493D00E7D1D6 /* PlayersOfLeagueView.swift in Sources */,
@@ -423,6 +433,8 @@
 				06D886B42A3A405C00E7D1D6 /* SearchCountriesView.swift in Sources */,
 				06810A3A2A434D3F00A8DF24 /* TrophiesByCoachView.swift in Sources */,
 				06D886DC2A40AE9600E7D1D6 /* PredictionsDataModel.swift in Sources */,
+				06810A402A43659600A8DF24 /* OddsMappingView.swift in Sources */,
+				06810A422A4365AC00A8DF24 /* OddsMappingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
