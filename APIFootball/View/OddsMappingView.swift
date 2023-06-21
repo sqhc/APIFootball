@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OddsMappingView: View {
     @StateObject var vm: OddsMappingViewModel
+    @State var showed = false
     
     var body: some View {
         ZStack{
@@ -17,6 +18,9 @@ struct OddsMappingView: View {
                     Text("Fixture id: \(odd.fixture?.id ?? 0)")
                     Text("Fixture date: \(odd.fixture?.date ?? "")")
                     Text("Updated at: \(odd.update ?? "")")
+                    NavigationLink("Fixture events") {
+                        FixtureEventsView(vm: FixtureEventsViewModel(id: "\(odd.fixture?.id ?? 0)"))
+                    }
                 }
                 .onAppear {
                     vm.pagination(odd: odd)
@@ -26,6 +30,8 @@ struct OddsMappingView: View {
             .navigationTitle("Odds")
         }
         .onAppear {
+            guard !showed else { return }
+            showed.toggle()
             vm.fetchOdds()
         }
         .alert(isPresented: $vm.hasError, error: vm.error) {

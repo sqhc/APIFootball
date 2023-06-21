@@ -19,6 +19,9 @@
 		06810A3E2A43649D00A8DF24 /* OddsMappingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A3D2A43649D00A8DF24 /* OddsMappingDataModel.swift */; };
 		06810A402A43659600A8DF24 /* OddsMappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A3F2A43659600A8DF24 /* OddsMappingView.swift */; };
 		06810A422A4365AC00A8DF24 /* OddsMappingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A412A4365AC00A8DF24 /* OddsMappingViewModel.swift */; };
+		06810A442A43768900A8DF24 /* FixtureEventsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A432A43768800A8DF24 /* FixtureEventsDataModel.swift */; };
+		06810A462A437A6600A8DF24 /* FixtureEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A452A437A6600A8DF24 /* FixtureEventsView.swift */; };
+		06810A482A437A7A00A8DF24 /* FixtureEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06810A472A437A7A00A8DF24 /* FixtureEventsViewModel.swift */; };
 		06D886812A3A26A500E7D1D6 /* APIFootballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886802A3A26A500E7D1D6 /* APIFootballApp.swift */; };
 		06D886832A3A26A500E7D1D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D886822A3A26A500E7D1D6 /* ContentView.swift */; };
 		06D886852A3A26C300E7D1D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D886842A3A26C300E7D1D6 /* Assets.xcassets */; };
@@ -84,6 +87,9 @@
 		06810A3D2A43649D00A8DF24 /* OddsMappingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsMappingDataModel.swift; sourceTree = "<group>"; };
 		06810A3F2A43659600A8DF24 /* OddsMappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsMappingView.swift; sourceTree = "<group>"; };
 		06810A412A4365AC00A8DF24 /* OddsMappingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsMappingViewModel.swift; sourceTree = "<group>"; };
+		06810A432A43768800A8DF24 /* FixtureEventsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureEventsDataModel.swift; sourceTree = "<group>"; };
+		06810A452A437A6600A8DF24 /* FixtureEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureEventsView.swift; sourceTree = "<group>"; };
+		06810A472A437A7A00A8DF24 /* FixtureEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureEventsViewModel.swift; sourceTree = "<group>"; };
 		06D8867D2A3A26A500E7D1D6 /* APIFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D886802A3A26A500E7D1D6 /* APIFootballApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFootballApp.swift; sourceTree = "<group>"; };
 		06D886822A3A26A500E7D1D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -220,6 +226,7 @@
 				06810A352A42244100A8DF24 /* CoachesByTeamViewModel.swift */,
 				06810A3B2A434D5D00A8DF24 /* TrophiesByCoachViewModel.swift */,
 				06810A412A4365AC00A8DF24 /* OddsMappingViewModel.swift */,
+				06810A472A437A7A00A8DF24 /* FixtureEventsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 				06810A332A42241200A8DF24 /* CoachesByTeamView.swift */,
 				06810A392A434D3F00A8DF24 /* TrophiesByCoachView.swift */,
 				06810A3F2A43659600A8DF24 /* OddsMappingView.swift */,
+				06810A452A437A6600A8DF24 /* FixtureEventsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 				06810A312A421B7700A8DF24 /* CoachesDataModel.swift */,
 				06810A372A434CA100A8DF24 /* TrophiesDataModel.swift */,
 				06810A3D2A43649D00A8DF24 /* OddsMappingDataModel.swift */,
+				06810A432A43768800A8DF24 /* FixtureEventsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -395,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06810A482A437A7A00A8DF24 /* FixtureEventsViewModel.swift in Sources */,
 				06D886CE2A3CDE4200E7D1D6 /* FixturesOfLeagueView.swift in Sources */,
 				06D886AE2A3A336600E7D1D6 /* TimezonesDataModel.swift in Sources */,
 				06D886E42A40D7A300E7D1D6 /* PlayerStatisticsByPlayerIDView.swift in Sources */,
@@ -416,6 +426,7 @@
 				06D886BE2A3B675B00E7D1D6 /* SeasonsView.swift in Sources */,
 				06810A382A434CA100A8DF24 /* TrophiesDataModel.swift in Sources */,
 				06810A322A421B7700A8DF24 /* CoachesDataModel.swift in Sources */,
+				06810A442A43768900A8DF24 /* FixtureEventsDataModel.swift in Sources */,
 				06810A302A41F6B200A8DF24 /* TeamsBySeansonLeaueViewModel.swift in Sources */,
 				06810A3E2A43649D00A8DF24 /* OddsMappingDataModel.swift in Sources */,
 				06D886E22A40D1C600E7D1D6 /* PlayerStatisticsDataModel.swift in Sources */,
@@ -427,6 +438,7 @@
 				06D886C02A3B677300E7D1D6 /* SeasonsViewModel.swift in Sources */,
 				06D886C42A3B854A00E7D1D6 /* LeaguesBySeasonView.swift in Sources */,
 				06810A3C2A434D5D00A8DF24 /* TrophiesByCoachViewModel.swift in Sources */,
+				06810A462A437A6600A8DF24 /* FixtureEventsView.swift in Sources */,
 				06D886C62A3B856200E7D1D6 /* LeaguesBySeasonViewModel.swift in Sources */,
 				06D886B02A3A340900E7D1D6 /* TimezonesView.swift in Sources */,
 				06D886D02A3CDE5C00E7D1D6 /* FixturesOfLeagueViewModel.swift in Sources */,
