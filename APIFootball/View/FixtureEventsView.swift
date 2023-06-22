@@ -13,7 +13,7 @@ struct FixtureEventsView: View {
     var body: some View {
         ZStack{
             if let events = vm.events?.response{
-                List(events, id:\.team?.id){ event in
+                List(events, id:\.player?.id){ event in
                     FixtureEventContent(event: event)
                 }
                 .listStyle(.plain)
